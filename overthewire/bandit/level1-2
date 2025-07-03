@@ -1,0 +1,4 @@
+You cannot use cat to open a file named "-", because that is the command to read the standard input. That being so, you need to open the file with its full or relative path.
+
+cat ./-
+263JGJPfgU6LtdEvgfWU1XP5yac29mFx

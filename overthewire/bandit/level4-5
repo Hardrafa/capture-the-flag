@@ -1,0 +1,5 @@
+This level is about verifying file content, which can be done with the "file" command. Using the file command in all files in the directory at once will reveal that "-file07" is an ASCII text.
+
+file ./*
+cat ./-file07
+4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw

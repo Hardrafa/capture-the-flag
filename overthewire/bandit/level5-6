@@ -1,0 +1,6 @@
+You can use find to search for a file with 1033 bytes in size, there is only one file with this size. The "c" after the size stands for bytes.
+
+find -size 1033c
+
+cat ./maybehere07/.file2
+HWasnPhtq9AVKe0dmk45nxy20cvUa6EG

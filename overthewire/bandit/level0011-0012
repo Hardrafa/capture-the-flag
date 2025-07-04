@@ -1,0 +1,38 @@
+There are lots of ways this level could be done. The intended way is by the use of the "tr" command, but you could also write a small code to decode the ROT13.
+
+
+TR METHOD:
+
+cat data.txt | tr '[A-Za-z]' '[N-ZA-Mn-za-m]'
+The password is 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
+
+
+CODE METHOD:
+
+import string
+
+encrypted = "Gur cnffjbeq vf 7k16JArUVv5LxVuJfsSVdbbtaHGlw9D4"
+decrypted = ""
+
+lowercase = string.ascii_lowercase
+uppercase = string.ascii_uppercase
+
+for char in encrypted:
+    if char.isupper():
+        decrypted += uppercase[uppercase.index(char) - 13]
+
+    elif char.islower():
+        decrypted += lowercase[lowercase.index(char) - 13]
+
+    else:
+        decrypted += char
+
+print(decrypted)
+
+
+
+
+
+
+
+

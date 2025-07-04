@@ -1,0 +1,9 @@
+To beat this level you  need to use the "strings" command, that prints the sequences of human readable characters in files. After that you can use grep to find the password.
+
+strings data.txt | grep "=="
+========== the
+========== password{k
+=========== is
+========== FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+
+

@@ -1,0 +1,5 @@
+To beat this level you need to decode the file using the base64 command with the option -d for decode. First you print the file contents with cat then pipe the output to the base64 command.
+
+cat data.txt | base64 -d
+The password is dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+

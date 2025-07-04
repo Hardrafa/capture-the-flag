@@ -1,0 +1,5 @@
+This level is about text processing. There are lots lines in the file that occur more than one time, but not in sequence. Because it's not in sequence, the uniq command doesn't identify the duplication. We need first to use the sort command to make it so all the equal lines are together, then we use the uniq command to show the line that only occurs once.
+
+cat data.txt | sort | uniq -u
+4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+

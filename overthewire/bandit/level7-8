@@ -1,0 +1,4 @@
+This level is probably meant to teach you about grep. You just have to pipe the output of the file to a grep command searching for the word "millionth".
+
+cat data.txt | grep millionth
+millionth	dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc

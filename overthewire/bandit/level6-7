@@ -1,0 +1,6 @@
+This level is about filtering output. It's easy enough to read through the find manual to see how you can search by user, group and size, however there are lots of files that you can't read because you don't have the right permission, and such "Permission denied" warnings will appear in your output, preventing you of finding the right file.
+What you need to do is use the 2>/dev/null to redirect all error output to void and see only the file you want.
+
+find . -size 33c -group bandit6 -user bandit7 -print 2>/dev/null
+cat ./var/lib/dpkg/info/bandit7.password
+morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj

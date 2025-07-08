@@ -1,0 +1,7 @@
+As the .bashrc is blocking our connection when the interactive terminal is loaded, we have to disable the pseudo-terminal (pty) when logging into bandit18. With this, though we don't have a terminal we can still execute commands normally.
+
+ssh bandit18@bandit.labs.overthewire.org -p 2220 -T
+
+cat readme
+cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
+

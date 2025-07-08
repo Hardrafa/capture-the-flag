@@ -1,0 +1,8 @@
+Just use diff to check what has been changed in the files. The first output corresponds to the first argument, so if you used the .old as the first argument, then the second output line is the password.
+
+diff passwords.old passwords.new
+42c42
+< C6XNBdYOkgt5ARXESMKWWOUwBeaIQZ0Y
+---
+> x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
+

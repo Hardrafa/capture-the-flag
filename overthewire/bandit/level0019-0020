@@ -1,0 +1,6 @@
+For this level you have an executable that you can use to execute a command as another user. You just have to use this file to open the file with the password to the next level.
+
+./bandit20-do cat /etc/bandit_pass/bandit20 
+0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+
+

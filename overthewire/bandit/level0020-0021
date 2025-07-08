@@ -1,0 +1,11 @@
+This one is kinda hard to understand, but quit easy when you understand it. It doesn't especify the port you need to use nor gives you any tips because you're supposed to create the port yourself. Make it so netcat will send the password to someone who queries a port that is not busy, send that process to the backgroud and the use the setuid binary to compare the passwords.
+
+cat /etc/bandit_pass/bandit20 | nc -lp 30020
+^Z
+bg
+./suconnect 30020
+
+Read: 0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+Password matches, sending next password
+EeoULMCra2q0dSkYj561DX7s1CpBuOBt
+

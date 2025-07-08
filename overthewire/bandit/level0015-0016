@@ -1,0 +1,8 @@
+For this level you have to use openssl's client function, called s_client. With that you can establish a ssl/tls connection and sbmit the password to get the new one.
+
+openssl s_client -connect localhost:30001
+
+8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
+Correct!
+kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
+

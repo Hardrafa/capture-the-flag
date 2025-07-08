@@ -1,0 +1,6 @@
+This level is not hard, but VERY ANNOYING. First you have to undo the hexdump using the -r option of xxd. After that you have to use the "file" command to check what type of compression was used in the current version of the file and use the appropriate command to decompress the file. Problem is, it has to be done lots of times and kinda gets annoying.
+
+In the end you'll get a file named data8.bin that contains the following contents:
+
+The password is FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
+

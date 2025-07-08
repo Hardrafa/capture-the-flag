@@ -1,0 +1,7 @@
+This level is easy if you understand the basics of ssh. You just need to use the private key as the identity file and log into bandit14 from bandit13.
+
+ssh -i sshkey.private bandit14@localhost -p 2220
+
+cat /etc/bandit_pass/bandit14
+MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
+

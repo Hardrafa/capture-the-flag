@@ -1,0 +1,5 @@
+Just open a shell from bandit26 and use the setuid binary to get the password.
+
+/bandit27-do cat /etc/bandit_pass/bandit27
+upsNCc7vzaRDx6oZC6GiR6ERwe1MowGB
+

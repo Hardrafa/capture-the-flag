@@ -1,0 +1,7 @@
+This level is hard. The trick is that you must notice that there is something different in the ssh login before it cuts the connection, which is the bandit26 ASCII art being shown. That is the text from its home directory being executed through shell (/usr/bin/showtext). 
+The thing about using more is that it shows text in pages. Normally the text is so small that you wouldn't need that, but if you resize you terminal enough so that the text can't fit it, multiple pages will be created and you'll stop more from finishing its execution. 
+Now you just need to enter visual mode, which is vim being executed. If you change the shell in vim, you can execute commands inside it.
+
+:!cat /etc/bandit_pass/bandit26
+s0773xxkk0MXfdqOfPRVr9L3jJBUOgCZ
+

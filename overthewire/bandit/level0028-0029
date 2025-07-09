@@ -1,0 +1,11 @@
+Same as before, the difference being that after you clone the repo you must use git log to get the previous commit id, then use checkout to go back to the previous commit. 
+
+# Bandit Notes
+Some notes for level29 of bandit.
+
+## credentials
+
+- username: bandit29
+- password: 4pT1t5DENaYuqnqvadYs1oE4QLCdjmJ7
+
+

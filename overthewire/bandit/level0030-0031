@@ -1,0 +1,8 @@
+Though this one gives you absolutely no clues, it's doable. All you have to do is go searching through .git until you find a kinda suspicios tag called "secret" in the packed-refs. After that you'll try to check the tag just to notice it's actually a blob. Knowing that, you just need to extract the contents of the blob using the git unpack-file command and you'll have the password.
+
+git unpack-file 84368f3a7ee06ac993ed579e34b8bd144afad351
+.merge_file_KRD3wh
+
+cat .merge_file_KRD3wh 
+fb5S2xb7bRyFmAvQYQGEqsbhVyJqhnDy
+

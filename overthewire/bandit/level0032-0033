@@ -1,0 +1,6 @@
+So basically you are not entering bandit32's account, but actually bandit33 that is using a bash shell that modifies your input before executing commands. However, it only modifies letter, not special characters nor numbers.
+Well, so you just have to expand to the shell being executed using $0 (I say "just" but I actually spent more than an hour reading through the bash manual to find this), with that you'll be given a shell and can open the bandit33 password.
+
+cat /etc/bandit_pass/bandit33
+tQdtbs5D5i2vJwkO8mEyYEyTL8izoeJ0
+

@@ -1,0 +1,5 @@
+First create a temporary folder, then you must create a script. In such script you'll use seq to create a sequence from 0000 to 9999, then use a for loop iterating through all the sequence while echoing the password with the number. After this is done, pipe it to the connection and you'll be inputing all the lines from the loop in the connection.
+
+Correct!
+The password of user bandit25 is iCi86ttT4KSNe1armKiwbQNmB3YJP3q4
+

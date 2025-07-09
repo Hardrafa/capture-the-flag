@@ -1,0 +1,6 @@
+Well... I took while in this level, honestly (mostly due to small mistakes in the script and permission). First thing you need to do is create a temporary directory with mktemp -d, then make sure that bandit24 can create files inside it (cause he is the one executing the script).
+
+What the script itself needs to do is read what is inside one of the many files inside the foo folder. In my case I used stat to print the name of the file and then printed the contents below, what lead me to a file called tmp.z0vISylWGJ. This file reveals the place where the password is, which was /tmp/tmp.3Ngm5AfXJv
+
+gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8
+

@@ -1,0 +1,7 @@
+Quite the easy level too. You just need to execute the command to create the $mytarget variable to get the name of the file with the password.
+
+echo I am user bandit23 | md5sum | cut -d ' ' -f 1
+
+cat /tmp/8ca319486bfbbc3663ea0fbe81326349
+0Zf11ioIjMVN551jX3CmStKLYqjk54Ga
+

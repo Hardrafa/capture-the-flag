@@ -1,0 +1,4 @@
+If you check the request headers, you'll see that there's a cookie called loggedin that's used to identify your login status. Just change it from 0 to 1.
+
+ Access granted. The password for natas6 is 0RoJwHdSKWFTYR5WuiAewauSuNaBXned
+

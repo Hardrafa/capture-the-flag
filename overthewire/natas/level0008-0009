@@ -1,0 +1,6 @@
+Analyze the source code and revert the function. This can be done in bash.
+
+echo 3d3d516343746d4d6d6c315669563362 | xxd -r -p | rev | base64 -d
+
+Access granted. The password for natas9 is ZE1ck82lmdGIoErlhQgWND6j2Wzz6b6t 
+

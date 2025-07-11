@@ -1,0 +1,7 @@
+If we can't execute commands besides grep, then let's just use grep.
+We can search through the password file itself.
+
+a /etc/natas_webpass/natas11
+
+/etc/natas_webpass/natas11:UJdqkK1pTu6VLt9UHWAgRZz6sVUZ3lEk
+

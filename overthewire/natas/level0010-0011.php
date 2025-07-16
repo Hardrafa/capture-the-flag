@@ -16,9 +16,9 @@ function xor_encrypt($in, $key) {
 }
 
 $xorkey = xor_encrypt($defaultdata, base64_decode($cookiedata));
-echo $xorkey, "\n";
+echo "Xor encryption key: ", $xorkey, "\n";
 
 $showyes = json_encode(array( "showpassword"=>"yes", "bgcolor"=>"#ffffff"));
-echo base64_encode(xor_encrypt($showyes, "eDWo")), "\n";
+echo "New cookie: ", base64_encode(xor_encrypt($showyes, "eDWo")), "\n";
  
 ?>

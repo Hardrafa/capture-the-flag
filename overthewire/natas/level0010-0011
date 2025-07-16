@@ -1,3 +1,15 @@
-Explain later
+Ok, so let's understand the code first. 
+
+The array( "showpassword"=>"no", "bgcolor"=>"#ffffff") is used as input for the loadData function. Such function takes the data from you cookie (that's base64 encoded), decodes it from base64, uses the xor encrypt function, decodes it from json format to array format and assigns whatever value is inside the showpassword and bgcolor keys from your cookie to the array the function returns.
+
+Such array is then verified to check if the showpassword key value is correct (in this case, "yes" is what they want). If it's correct, then the password is shown. To sum it up, we need to make it so our cookie, when fully decoded, is an array with the showpassword key value as "yes", while by default it's "no".
+
+However, we have a problem. Halfway the decoding process we have a xor encryption of which we don't know the key. Fortunately, xor encryption works in a way that if you have the input and the output, you can xor both values to get the key. We know that currently our cookie is a base64 encoded value, with the base value (before xor and json encode) being the defaultdata array used as input for the loadData function. So we have the values before and after the xor encryption.
+
+Using the php-cli package in Linux, we can copy the xor encrypt function to modify it in our own code. We can then recover the key and use the key to encode our modified array with the showpassword key value as "yes" and get the right cookie value. 
+
+The default cookie data was "HmYkBwozJw4WNyAAFyB1VUcqOE1JZjUIBis7ABdmbU1GIjEJAyIxTRg%3D", the key was "eDWo" and the modified cookie was "HmYkBwozJw4WNyAAFyB1VUc9MhxHaHUNAic4Awo2dVVHZzEJAyIxCUc5"
+
 
 The password for natas12 is yZdkjAYZRd3R7tq7T5kXMjMJlOIkzDeB
+

@@ -1,4 +1,5 @@
-If you check the request headers, you'll see that there's a cookie called loggedin that's used to identify your login status. Just change it from 0 to 1.
+Trick in this level is that the HTML source code is not showing everything. There's php code being executed in the background that can only be seen clicking on the View sourcecode button. 
+The php source code shows that our input is being compared to a specific included file which we can acess to see its contents and input the right secret.
 
- Access granted. The password for natas6 is 0RoJwHdSKWFTYR5WuiAewauSuNaBXned
+Access granted. The password for natas7 is bmg8SvU1LizuWjx3y7xkNERkHxGre0GS
 

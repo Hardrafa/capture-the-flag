@@ -1,5 +1,6 @@
-Trick in this level is that the HTML source code is not showing everything. There's php code being executed in the background that can only be seen clicking on the View sourcecode button. 
-The php source code shows that our input is being compared to a specific included file which we can acess to see its contents and input the right secret.
+Just a directory traversal level. The path is in the HTML source code, so just go there.
 
-Access granted. The password for natas7 is bmg8SvU1LizuWjx3y7xkNERkHxGre0GS
+index.php?page=../../../../../../../../etc/natas_webpass/natas8
+
+xcoXLmzMkoIP9D7hlgPlh9XD7OgLAe5Q 
 

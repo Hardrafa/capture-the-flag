@@ -1,0 +1,13 @@
+Pretty easy to see it's a SQL injection. You just input any strange characters in the password field and you'll see some SQL errors, proving it's possible to perform an injection. 
+
+According to the source code, the query goes like this:
+
+SELECT * from users where username="" and password=""
+
+So you need to make it so it shows it matches something in the table. For that, you can make a condition that's always true in the password. In this case, " OR ""=", that will always be true because the query would go like this:
+
+SELECT * from users where username="" and password="" OR ""=""
+
+
+Successful login! The password for natas15 is SdqIqBsFcz3yotlNYErZSZwblkm0lrvx
+

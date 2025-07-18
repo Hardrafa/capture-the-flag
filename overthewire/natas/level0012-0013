@@ -1,0 +1,5 @@
+This one is very easy if you understood the previous level. It's the same thing, except the code must be inside a JPEG image.
+
+You can use the command "convert -size 32x32 xc:white empty.jpg" to create a blank JPEG image and then you just have to open the image with a text editor like vim and insert the php code.
+
+z3UYcr4v4uBpeX8f7EZbMHlzK4UR2XtQ

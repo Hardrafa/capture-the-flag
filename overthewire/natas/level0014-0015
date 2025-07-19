@@ -1,0 +1,8 @@
+
+
+
+natas16" AND (SELECT "a" FROM users WHERE username="natas16" AND LENGTH(password) = 32) = "a
+
+The password has 32 characters
+
+

@@ -1,8 +1,17 @@
+First thing you notice after analysing the code is that all the server returns to you are messages printed by php according to the number of lines returned from your query. In other words, you cannot see what's being returned from the SQL query itself.
 
+If you can't see, then it probably means you have a blind SQL injection. The commentary in the source code shows that there is a password associated with each username inside the users table, so we now have our objective that's using blind SQL injection to get the password of a specific username. Of course, that username is natas16, which you can check its existence.
 
+As we only have success or failure messages, we know it's a boolean conditional blind SQL. That means a brute force is needed. If a brute force is needed, first step is to know the password length, which can be made through trial and error using the following query, that will give the message "This user exists." as a sign of success.
 
 natas16" AND (SELECT "a" FROM users WHERE username="natas16" AND LENGTH(password) = 32) = "a
 
-The password has 32 characters
+Now we need to create a query that will check for the characters in the password. For that we can use the following query:
+
+natas16" AND (SELECT BINARY SUBSTRING(password,1,1) FROM users WHERE username="natas16") = "a
+
+Knowing that the password has 32 characters and the possible characters are the alphabet letter in lower and uppercase and the numbers from 0 to 9, in worst case scenario we would have to make 1984 queries to get the password. Of course we'll need to automate this attack, so we can either use Burp Suite intruder in cluster bomb mode or create our own script. Though it will probably took longer, I chose the Burp Suite method.
+
+The password is: hPkjKYviLQctEW33QmuXL6eDVfMW4sGo
 
 

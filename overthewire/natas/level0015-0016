@@ -1,0 +1,5 @@
+Ok so in this case we're doing a brute force attack again. We can use $, () and /, that's enough to execute commands inside the grep command.
+
+What we're going to do now is execute a grep inside a grep. We'll use regex to get the password character by character. As our only outputs are the dictionary words, they'll have to be used in a way that we'll know if we got our character right or not according to what's outputted. The length of our response can be used as a way to know if we got our right answer.
+
+$(grep -o ^a /etc/natas_webpass/natas17)

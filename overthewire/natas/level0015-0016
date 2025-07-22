@@ -1,5 +1,12 @@
 Ok so in this case we're doing a brute force attack again. We can use $, () and /, that's enough to execute commands inside the grep command.
 
-What we're going to do now is execute a grep inside a grep. We'll use regex to get the password character by character. As our only outputs are the dictionary words, they'll have to be used in a way that we'll know if we got our character right or not according to what's outputted. The length of our response can be used as a way to know if we got our right answer.
+We're going to execute a grep inside a grep, using regex to get the password character by character. As our only outputs are the dictionary words, they'll have to be used in a way that we'll know if we got our character right or not according to what's outputted. 
+If you do some experimentation using natas16 password, you'll notice that if something matches using the grep input below, the answer can be anything, but if it's wrong the result is always the same, all the dictionary is outputted. If you know the response's length, it can be used as a way to know if we got our right answer.
 
 $(grep -o ^a /etc/natas_webpass/natas17)
+
+We know that every natas password is 32 characters in length, so we have our conditions set.
+
+Using the requests library in python we can create a script to get the password.
+
+EqjHJbo7LFNb8vwhHb9s75hokh5TF0OC

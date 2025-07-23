@@ -1,0 +1,12 @@
+Remember natas15? This is him now. Feel old yet?
+
+This is level is the same thing as natas15, a blind SQL injection. The only thing that changes is the method. Instead of getting a response and using it to know if we guessed right, we use time to know if our guess is right or not, because we don't receive any output from the server regardless of our input.
+
+The following query was used to make the time based blind SQL injection. Sleep is the function we use to manipulate the time according to the success of our guess.
+
+natas18" AND IF( (SELECT BINARY SUBSTRING(password,1,1) FROM users WHERE username="natas18") = "6", SLEEP(5), 0) AND ""=" 
+
+Now you just need to make a brute force script for it.
+
+6OG1PbKdVjyBlpxgD4DDbRG6ZLlCGgCJ
+

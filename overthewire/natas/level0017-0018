@@ -1,0 +1,6 @@
+For this code ou just have to the $maxid and think "Oh, if it's such a small number, then I might be able to brute force it". Yeah, there's no other hint. 
+Just write a script that tests every PHPSESSID value from 1 to 640 and you'll eventually get a response with the password. Not a very fun level, I know.
+
+Username: natas19
+Password: tnwER7PdfWkxsG4FNWUtoAZ9VyZTJqJr
+

@@ -1,1 +1,9 @@
-There is probably a pattern relating the ussername and password to the ID... gotta investigate further, but doesn't seen that hard
+I you investigate the pattern of PHPSESSID, you'll notice that for the admin username there's only 3 characters that change, no matter what password you input:
+
+3_3_3_2d61646d696e
+
+Knowing that, you just need to modify the code from last level to test the 1000 possible combinations for this pattern and you'll eventually find the password.
+
+Username: natas20
+Password: p5mCvP7GS2K6Bmt3gqhM2Fc1A5T8MVyw
+

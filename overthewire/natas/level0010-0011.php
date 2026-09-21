@@ -1,6 +1,6 @@
 <?php
 
-$cookiedata = "HmYkBwozJw4WNyAAFyB1VUcqOE1JZjUIBis7ABdmbU1GIjEJAyIxTRg%3D";
+$cookiedata = "EGAgHwQ1IxYYMSQYGSZxTUksPFVHYDEQCC0%2FGBlgaVVIJDURDSQ1VRY%3D";
 $defaultdata = json_encode(array( "showpassword"=>"no", "bgcolor"=>"#ffffff"));
 
 function xor_encrypt($in, $key) {
@@ -19,6 +19,6 @@ $xorkey = xor_encrypt($defaultdata, base64_decode($cookiedata));
 echo "Xor encryption key: ", $xorkey, "\n";
 
 $showyes = json_encode(array( "showpassword"=>"yes", "bgcolor"=>"#ffffff"));
-echo "New cookie: ", base64_encode(xor_encrypt($showyes, "eDWo")), "\n";
+echo "New cookie: ", base64_encode(xor_encrypt($showyes, "kBSw")), "\n";
  
 ?>
